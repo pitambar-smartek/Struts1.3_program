@@ -1,0 +1,27 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+ <form-beans>
+  <form-bean name="loginform" type="com.pitambar.view.LoginForm" />
+   <form-bean name="regis" type="com.pitambar.view.RegForm" />
+      <form-bean name="accountform" type="com.pitambar.view.AccountForm" />
+
+ </form-beans>
+ <action-mappings>
+  <action type="com.pitambar.controller.LoginAction" name="loginform" path="/login">
+  <forward name="ok" path="/welcome.jsp" />
+  <forward name="notok" path="/loginfailed.jsp" />
+  </action>
+   <action type="com.pitambar.controller.RegAction" name="regis" path="/reg">
+  <forward name="okk" path="/success.jsp" />
+  <forward name="notokk" path="/failer.jsp" />
+  </action>
+
+  <action type="com.pitambar.controller.AccountAction" name="accountform" path="/account">
+  <forward name="success" path="/accountdetails.jsp" />
+  <forward name="failer" path="/noaccount.jsp" />
+  </action>
+ </action-mappings>
+  <message-resources parameter="ApplicationResources" />
+</struts-config>

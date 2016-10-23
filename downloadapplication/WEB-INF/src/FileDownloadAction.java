@@ -1,0 +1,42 @@
+package com.pitambar.controller;
+import java.io.*;
+import javax.servlet.http.*;
+import javax.servlet.*;
+import org.apache.struts.action.*;
+import org.apache.struts.actions.*;
+
+public class FileDownloadAction extends DownloadAction
+{
+	protected StreamInfo getStreamInfo(ActionMapping mapping,ActionForm form,HttpServletRequest req,HttpServletResponse res)throws Exception
+	{
+		String fileName=null;
+		try{
+			//Get the file name form the parameter attribute
+			 fileName=mapping.getParameter();
+			 System.out.println(fileName);
+		}
+			catch(Exception e)
+			{
+			}
+			//set the content Disposition
+			res.setHeader("content_Disposition",fileName);
+			res.setContentType("application/ms-word");
+			//Get access to ServletContext obj;
+			ServletContext sc=servlet.getServletContext();
+			
+			System.out.println(sc);
+			
+			//return Stream obj pointing to the file to be downloaded
+			String con=null;
+			try{
+			con=res.getContentType();
+			System.out.println(con);
+			}catch(NullPointerException e)
+		{
+				System.out.println("ok");
+		}
+		//	StreamInfo info= DownloadAction.StreamInfo();
+			return new ResourceStreamInfo(ContentType,sc,fileName);
+		
+	}
+}

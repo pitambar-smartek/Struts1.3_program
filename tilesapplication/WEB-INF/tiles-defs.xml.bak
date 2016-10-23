@@ -1,0 +1,22 @@
+<!DOCTYPE tiles-definitions PUBLIC
+ "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+ "http://struts.apache.org/dtds/tiles-config 1 3.dtd">
+
+ <tiles-definitions>
+       <definition path="/layout.jsp" name="logindef">
+	            <put name="header" value="/headercontent.jsp" />
+				<put name="footer" value="/footercontent.jsp" />
+				<put name="menu" value="/menucontentone.jsp" />
+				<put name="body" value="/loginbodycontent.jsp" />
+		</definition>
+
+		<definition name="registerdef" extends="logindef">
+		              <put name="body" value="/registerbodycontent.jsp" />
+		</definition>
+
+		<definition name="userhomedef" extends="logindef">
+		           <put name="menu" value="/menucontenttwo.jsp" />
+				   <put name="body" value="/homebodycontent.jsp" />
+
+	   </definition>
+</tiles-definitions>

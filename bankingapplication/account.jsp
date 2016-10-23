@@ -1,0 +1,13 @@
+<%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
+<html>
+    <body>
+	    <center>
+		     <h1>Balance Enquiry Entry screen</h1>
+			 <html:form action="/enquiry" method="post">
+			 AccountNo::<html:text property="accno" value=" " />
+		
+			 <html:submit>EnquiryDetails</html:submit>
+			 </html:form>
+			  </center>
+	</body>
+</html>

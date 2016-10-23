@@ -1,0 +1,14 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+ <form-beans>
+ <form-bean name="FileUploadAndSave" type="com.pitambar.view.StrutsUploadAndSaveForm" >
+  </form-bean>
+ </form-beans>
+ <action-mappings>
+<action path="/FileUploadAndSave" type="com.pitambar.controller.StrutsUploadAndSaveAction"           name="FileUploadAndSave" scope="request" validate="true"     input="/FileUploadAndSave.jsp">
+<forward name="success" path="/downloaduploadedfile.jsp"/>
+</action>
+ </action-mappings>
+</struts-config>

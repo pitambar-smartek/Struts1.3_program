@@ -1,0 +1,12 @@
+<%@taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
+<%@taglib prefix="bean"  uri="http://struts.apache.org/tags-bean" %>
+<html:html>
+<body bgcolor="wheat">
+<center>
+        <html:form action="both" method="post">
+		EmployeeNo<html:text property="empno" value=""/><br>
+		            <input type="submit" name="emp" value="<bean:message key="insert"/>"  />
+					</html:form>
+					</center>
+					</body>
+					</html:html>

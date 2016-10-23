@@ -1,0 +1,1 @@
+SET CLASSPATH=.;C:\sun\servlet-api.jar;C:\sun\struts-core-1.3.10.jar

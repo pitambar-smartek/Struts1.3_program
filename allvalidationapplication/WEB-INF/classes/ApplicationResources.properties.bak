@@ -1,0 +1,15 @@
+login.email=Email
+login.date=Date
+login.range=Range
+login.name=Name
+login.profession=Profession 
+login.gender=Select Gender
+login.agree=Agree
+errors.required={0} is required.
+errors.email={0} is an invalid e-mail address.
+errors.date={0} is not a date.
+  errors.range={0} is not in the range {1} through {2}.
+  my.error.name=Name
+  my.error.mask.name=<br>Please provide only alphaetes for <u>Name</u>
+  my.error.age=Age
+

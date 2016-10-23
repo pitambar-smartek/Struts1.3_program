@@ -1,0 +1,11 @@
+<html>
+<body bgcolor="pink">
+<center>
+<h1>File Uploading screen</h1>
+<form action="fileUploadAction.do" method="post" enctype="multiparg/form-data">
+File Location:<input type="file" name="file">
+<br><input type="submit" value="upload">
+</form>
+</center>
+</body>
+</html>

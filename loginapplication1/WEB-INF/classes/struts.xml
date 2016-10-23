@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/tdts/struts-2.0.dtd">
+<struts>
+      <package name="mypack" extends="struts-default">
+	           <action name="loginAction" class="com.pitambar.struts2.LoginAction">
+			          <result name="success">/welcome.jsp</result>
+			           <result name="error">/failure.jsp</result>
+			  </action>
+     </package>
+</struts>

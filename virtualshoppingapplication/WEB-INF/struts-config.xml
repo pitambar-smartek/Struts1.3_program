@@ -1,0 +1,20 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+<form-beans>
+<form-bean type="com.pitambar.view.ShoppingForm" name="shooping" />
+</form-beans>
+<action-mappings>
+<action path="/shopping" type="com.pitambar.controler.ShoppingAction" name="shooping"  >
+<forward name="shoppingpage" path="/shoppage.jsp"  redirect="true"/>
+<forward name="noitems"  path="/noitem.jsp" />
+<forward name="itemdetails" path="/checkout.jsp" />
+<forward name="farewel" path="/visitagain.jsp" />
+</action>
+<action path="/shoppingpage" parameter="/shoppage.jsp" type="org.apache.struts.actions.ForwardAction">
+</action>
+</action-mappings>
+<message-resources parameter="ApplicationResources" />
+
+</struts-config>

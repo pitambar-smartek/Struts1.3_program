@@ -1,0 +1,16 @@
+<html>
+<body bgcolor="magenta">
+<center>
+<h1>Banking Application<hr width="30%" align="center" color="green" size="10"></h1>
+<font size="5" color="orange">
+
+<ol >
+             <li><a href="openaccount.jsp">Opening Account</a></li>
+             <li><a href="withdraw.jsp">WithDrawing amount</a></li>
+             <li><a href="deposit.jsp">Depositing Amount</a></li>
+             <li><a href="closeaccount.jsp">Closing Account</a></li>
+			 <li><a href="closeaccount.jsp">BalanceEnquiry</a></li>
+       </ol>
+</center>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.pitambar.service;
+
+public class LoginModel {
+
+}

@@ -1,0 +1,10 @@
+//ApplicationResources_en.properties
+
+welcome.message=welcome to english user
+welcome=<b>helllo english user wlcome to out website</b>
+username=<b>username</b>
+password=<b>password</b>
+register.submit=register
+
+errors.required={0} field can not be empty
+errors.minlength={0} can not be less than {1} characters.

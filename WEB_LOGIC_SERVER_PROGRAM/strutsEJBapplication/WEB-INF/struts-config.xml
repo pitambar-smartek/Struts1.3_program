@@ -1,0 +1,14 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+ <form-beans>
+  <form-bean name="loginform" type="com.pitambar.view.LoginForm" />
+ </form-beans>
+ <action-mappings>
+  <action type="com.pitambar.controller.LoginAction" name="loginform" path="/login">
+  <forward name="ok" path="/welcome.jsp" />
+  <forward name="notok" path="/loginfailed.jsp" />
+  </action>
+ </action-mappings>
+</struts-config>

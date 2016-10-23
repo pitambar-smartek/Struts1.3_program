@@ -1,0 +1,15 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+<form-beans>
+<form-bean name="openingform" type="com.pitambar.view.OpenAccountForm" />
+</form-beans>
+<action-mappings> 
+<action type="com.pitambar.controler.AccountAction" path="/open" name="openingform" >
+<forward name="ok" path="/success.jsp" />
+<forward name="notok" path="/problem.jsp" />
+</action>
+</action-mappings>
+</struts-config>

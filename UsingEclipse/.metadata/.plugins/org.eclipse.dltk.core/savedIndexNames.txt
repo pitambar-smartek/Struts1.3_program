@@ -1,0 +1,2 @@
+G:\All Struts application\UsingEclipse\.metadata\.plugins\org.eclipse.dltk.core\3352432327.index
+G:\All Struts application\UsingEclipse\.metadata\.plugins\org.eclipse.dltk.core\3570913235.index

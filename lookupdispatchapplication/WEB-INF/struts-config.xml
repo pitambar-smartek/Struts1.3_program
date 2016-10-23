@@ -1,0 +1,27 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+<form-beans>
+<form-bean type="org.apache.struts.action.DynaActionForm" name="empbean" >
+     <form-property name="empno" type="java.lang.Integer"/>
+	 <form-property name="name" type="java.lang.String"/>
+	 <form-property name="salary" type="java.lang.Float"/>
+</form-bean>
+</form-beans>
+   <global-forwards>
+            <forward name="success" path="successdef" />
+			<forward name="failure" path="failuredef" />
+   </global-forwards>
+
+<action-mappings>
+   <action path="/insertemp"  type="org.apache.struts.actions.ForwardAction" parameter="/insertview.jsp" />
+   <action path="/deleteemp"  type="org.apache.struts.actions.ForwardAction" parameter="/deleteview.jsp" />
+   <action path="/both"  type="com.pitambar.controller.MyLookupDispatchAction" parameter="emp"  name="empbean"/>
+</action-mappings>
+<message-resources parameter="ApplicationResources" />
+
+       <plug-in className="org.apache.struts.tiles.TilesPlugin">
+	             <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		</plug-in>
+</struts-config>

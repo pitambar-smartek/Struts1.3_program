@@ -1,0 +1,13 @@
+<web-app>
+ <servlet>
+        <servlet-name>StickyCaptcha</servlet-name>
+        <servlet-class>com.zetcode.CaptchaServlet</servlet-class>
+       
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StickyCaptcha</servlet-name>
+        <url-pattern>/captcha</url-pattern>
+    </servlet-mapping>
+
+ </web-app>

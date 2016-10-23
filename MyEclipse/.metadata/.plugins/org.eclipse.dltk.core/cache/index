@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" environment="org.eclipse.dltk.core.environment.localEnvironment">
+  <entries path="G:/All Struts application/MyEclipse/usingmyeclipseloginapplication/WebRoot/index.jsp" timestamp="1329370761078" lastAccessTime="1329370766546"/>
+  <entries path="G:/All Struts application/MyEclipse/usingmyeclipseloginapplication/WebRoot/loginfailed.jsp" timestamp="1329371847234" lastAccessTime="1329371945546"/>
+  <entries path="G:/All Struts application/MyEclipse/usingmyeclipseloginapplication/WebRoot/welcome.jsp" timestamp="1329372138453" lastAccessTime="1329372138953"/>
+</cache:CacheIndex>

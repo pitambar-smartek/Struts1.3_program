@@ -1,0 +1,24 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+<form-beans>
+<form-bean type="com.pitambar.admin.form.AccountForm" name="accountForm" >     
+</form-bean>
+</form-beans>
+   
+<action-mappings>
+   <action path="/createAccountAction"  type="com.pitambar.admin.action.CreateAccountAction" name="accountForm" validate="false">
+         <forward name="success" path="/createAccountSuccess.jsp" />
+	</action>
+
+	<action path="/deleteAccountAction" type="com.pitambar.admin.action.DeleteAccountAction" name="accountForm" validate="false">
+	      <forward name="success" path="/deleteAccountSuccess.jsp" />
+    </action>
+
+    <action path="/createAccountForwardAction"  type="org.apache.struts.actions.ForwardAction" parameter="/createAccount.jsp" />
+
+  <action path="/deleteAccountForwardAction"  type="org.apache.struts.actions.ForwardAction" parameter="/deleteAccount.jsp" />
+</action-mappings>
+<message-resources parameter="ApplicationResources" />
+</struts-config>

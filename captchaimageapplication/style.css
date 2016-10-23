@@ -1,0 +1,9 @@
+<style>
+* { font-size: 12px; font-family: Verdana }
+
+input, textarea { border: 2px solid #ccc }
+
+tr { margin: 5px; padding:5px;}
+
+.alert { font-size:25px; color:red; font-weight:bolder }
+</style>

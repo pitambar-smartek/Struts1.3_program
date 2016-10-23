@@ -1,0 +1,1 @@
+<marquee><font color="green" size="4">WELCOME TO WWW.NARESHIT.COM</FONT></MARQUEE>

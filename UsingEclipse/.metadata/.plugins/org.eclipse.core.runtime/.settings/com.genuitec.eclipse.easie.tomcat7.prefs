@@ -1,0 +1,10 @@
+#Thu May 17 23:57:14 NPT 2012
+TOMCAT_HOME=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0
+TOMCAT_TEMP=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\temp
+LIBRARY_PATH="C\:\\Program Files\\Java\\jdk1.6.0\\bin;C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\bin"
+TOMCAT_BASE=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0
+ENDORSED_DIRS="C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0/common/endorsed"
+eclipse.preferences.version=1
+JDK_INSTALLATION_NAME=jdk1.6.0
+JDK_HOME=C\:\\Program Files\\Java\\jdk1.6.0
+SERVER_ENABLEMENT=true

@@ -1,0 +1,11 @@
+<project name="firstname" default="package">
+	<target name="compile">
+		<javac srcdir="src" distdir="." />
+	</target>
+	<target name="run" depends="compile">
+		<java classname="HelloWorld" classpath="." />
+	</target>
+	<target name="package" depends="run">
+		<jar destfile="HelloWorld.jar" includes="*.class"/>
+	</target>
+</project>

@@ -1,0 +1,24 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+<form-beans>
+<form-bean type="com.pitambar.user.form.AccountForm" name="accountForm" >     
+</form-bean>
+</form-beans>
+   
+<action-mappings>
+   <action path="/getBalanceAction"  type="com.pitambar.user.action.GetBalanceAction" name="accountForm" validate="false">
+         <forward name="success" path="/balance.jsp" />
+	</action>
+
+	<action path="/getInterestAction" type="com.pitambar.user.action.GetInterestAction" name="accountForm" validate="false">
+	      <forward name="success" path="/interest.jsp" />
+    </action>
+
+    <action path="/getBalanceForwardAction"  type="org.apache.struts.actions.ForwardAction" parameter="/getBalance.jsp" />
+
+  <action path="/getInterestForwardAction"  type="org.apache.struts.actions.ForwardAction" parameter="/getInterest.jsp" />
+</action-mappings>
+<message-resources parameter="ApplicationResources" />
+</struts-config>

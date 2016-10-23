@@ -1,0 +1,30 @@
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+       "http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+<tiles-definitions>
+   <definition path="/layout.jsp" name="homedef">
+           <put name="header" value="/headercontent.jsp" />
+		   <put name="footer" value="/footercontent.jsp" />
+		   <put name="menu" value="/menucontent.jsp" />
+		   <put name="body" value="/defaultbodycontent.jsp" />
+   </definition>
+
+    <definition  name="insertdef" extends="homedef">
+	     
+           <put name="body" value="/insertbodycontent.jsp" />		   
+   </definition>
+
+   <definition  name="deletedef" extends="homedef">
+   
+           <put name="body" value="/deletebodycontent.jsp" />		   
+   </definition>
+
+   <definition  name="successdef" extends="homedef">
+           <put name="body" value="/successbodycontent.jsp" />		   
+   </definition>
+
+   <definition  name="failuredef" extends="homedef">
+           <put name="body" value="/failurebodycontent.jsp" />		   
+   </definition>
+		   
+</tiles-definitions>

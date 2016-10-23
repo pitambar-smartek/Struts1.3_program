@@ -1,0 +1,1 @@
+<jsp:forward page="registerAction.do?usr=registerPage"></jsp:forward>

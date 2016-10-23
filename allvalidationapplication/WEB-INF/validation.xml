@@ -1,0 +1,69 @@
+<!DOCTYPE form-validation PUBLIC
+        "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN"
+        "http://jakarta.apache.org/commons/dtds/validator_1_3_0.dtd">
+<form-validation>
+<formset>
+ <form name="userForm">
+  <field property="emailId" depends="required,email" >
+  <arg position="0" key="login.email" />
+    </field>
+	 <field property="date" depends="required,date">
+	 <arg position="0" key="login.date" />	
+	 <var>
+	      <var-name>datePattern</var-name>
+		  <var-value>yyyy-MM-dd</var-value>
+	 </var>
+
+	     		 
+	 </field>
+	 <field property="range" depends="required,intRange">
+	 <arg position="0" key="login.range" resource="true"/>
+	 <arg position="1" key="10000" resource="false" />
+	  <arg position="2" key="90000" resource="false" />
+			<var>
+			<var-name>min</var-name>
+			<var-value>10000</var-value>
+			</var>
+			 <var>
+			<var-name>max</var-name>
+			<var-value>90000</var-value>
+			</var>
+	 </field>
+	 <field property="name" depends="required,mask">
+	      <msg name="mask" key="my.error.mask.name" />
+       
+		  <arg position="0" key="login.name" />
+		  <var>
+		      <var-name>mask</var-name>
+			  <var-value>^[a-z A-Z]*$</var-value>
+	    </var>       
+	 </field>
+	 <field property="profession" depends="required">
+	     <arg position="0" key="login.profession" resource="true"/>
+	 </field>
+	
+	 <field property="gender" depends="required">
+	     <arg position="0" key="login.gender" resource="true"/>
+	 </field>
+	<field property="agree" depends="required">
+	      <arg position="0" key="login.agree" resource="true" />
+    </field>
+	<field property="age" depends="required,integer,intRange">
+	     <arg position="0" key="my.error.age" />
+		 <arg position="1" name="intRange" key="${var:min}" resource="false" />
+		  <arg position="2" name="intRange" key="${var:max}" resource="false" />
+           <var>
+		  <var-name>min</var-name>
+			<var-value>20</var-value>
+			</var>
+			 <var>
+			<var-name>max</var-name>
+			<var-value>50</var-value>
+			</var>
+	    
+	</field>
+	
+ </form>
+</formset>
+    
+</form-validation>

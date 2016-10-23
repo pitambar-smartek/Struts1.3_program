@@ -1,0 +1,24 @@
+#Mon Jun 11 13:08:41 NPT 2012
+tomcat7Server.OrderManagementSystem.shouldOverwrite=false
+tomcat7Server.loginapplication.altContextRoot=
+tomcat7Server.OrderManagementSystem.IEARProjectName=
+tomcat7Server.loginapplication.deploymentPath=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\webapps\\loginapplication
+tomcat7Server.loginapplication.shouldBackup=false
+tomcat7Server.OrderManagementSystem.isDeployed=true
+tomcat7Server.loginapplication.deployIsOverProject=false
+tomcat7Server.loginapplication.isExploded=true
+tomcat7Server.OrderManagementSystem.deployIsOverProject=false
+eclipse.preferences.version=1
+tomcat7Server.OrderManagementSystem.contextRoot=/OrdermanagementSystem
+tomcat7Server.OrderManagementSystem.type=WebDeployment
+tomcat7Server.loginapplication.isDeployed=true
+tomcat7Server.OrderManagementSystem.altContextRoot=
+tomcat7Server.loginapplication.isUptoDate=true
+tomcat7Server.loginapplication.contextRoot=/loginapplication
+tomcat7Server.OrderManagementSystem.deploymentPath=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\webapps\\OrdermanagementSystem
+tomcat7Server.OrderManagementSystem.isUptoDate=true
+tomcat7Server.loginapplication.type=WebDeployment
+tomcat7Server.loginapplication.shouldOverwrite=false
+tomcat7Server.OrderManagementSystem.isExploded=true
+tomcat7Server.loginapplication.IEARProjectName=
+tomcat7Server.OrderManagementSystem.shouldBackup=false

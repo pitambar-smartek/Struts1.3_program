@@ -1,0 +1,17 @@
+
+<HTML>
+<body bgcolor="yellow">
+ <center>
+ <h1>Login Entry Screen</h1>
+ <form action="/login" method="post" >
+
+ User Name::<input type="text" name="username" /><br>
+
+Password:: <input type="password" property="password" />
+
+<input type="submit" value="Login">
+</form>
+
+ </center>
+ </body>
+ </HTML>

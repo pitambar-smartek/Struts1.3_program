@@ -1,0 +1,33 @@
+package com.pitambar.view;
+import org.apache.struts.action.ActionForm;
+public class ShoppingForm extends ActionForm
+{
+	private String pcode;
+	private int quantity;
+	private String submit;
+	public void setPcode(String pcode)
+	{
+		this.pcode=pcode;
+	}
+	public String getPcode()
+	{
+		return pcode;
+	}
+	public void setQuantity(int quantity)
+	{
+		this.quantity=quantity;
+	}
+	public int getQuantity()
+	{
+		return quantity;
+	}
+	public void setSubmit(String submit)
+	{
+		this.submit=submit;
+	}
+	public String getSubmit()
+	{
+		return submit;
+
+	}
+}

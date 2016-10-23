@@ -1,0 +1,65 @@
+package com.pitambar.view;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+public class RegistrationForm extends ActionForm
+{
+	private String username,password,emailid,agree;
+	private String professional,mobileno;
+	public void setAgree(String agree)
+	{
+		this.agree=agree;
+	}
+	public String getAgree()
+	{
+		return agree;
+	}
+	public void setProfessional(String professional)
+	{
+		this.professional=professional;
+	}
+	public String getProfessional()
+	{
+		return professional;
+	}
+	public void setMobileno(String mobileno)
+	{
+		this.mobileno=mobileno;
+	}
+	public String getMobileno()
+	{
+		return mobileno;
+	}
+	
+	public void setUsername(String username)
+	{
+		this.username=username;
+	}
+	public String getUsername()
+	{
+		return username;
+	}
+	public void setPassword(String password)
+	{
+		this.password=password;
+	}
+	public String getPassword()
+	{
+		return password;
+	}
+	public void setEmailid(String emailid)
+	{
+		this.emailid=emailid;
+	}
+	public String getEmailid()
+	{
+		return emailid;
+	}
+	public void reset(ActionMapping mapping ,HttpServletRequest req)
+	{
+		
+	  agree="false";
+			
+	}
+}

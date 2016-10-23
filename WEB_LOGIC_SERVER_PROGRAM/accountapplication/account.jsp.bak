@@ -1,0 +1,11 @@
+<html>
+<body bgcolor="cyan">
+<center>
+ <h1>Account Retrieval Application</h1>
+ <html:form action="account" >
+ Account no:<html:text property="accno" />
+ <html:submit>Get Details Account</html:summit>
+ </html:form>
+</center>
+</body>
+</html>

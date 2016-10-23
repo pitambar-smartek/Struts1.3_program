@@ -1,0 +1,1 @@
+<center><h3>Registration body page</h3></center>

@@ -1,0 +1,17 @@
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+<form-beans>
+<form-bean type="com.pitambar.view.RegisterForm" name="registerForm" />
+</form-beans>
+
+<action-mappings>
+<action path="/registerAction" type="com.pitambar.controller.RegisterAction" name="registerForm" parameter="usr">
+<forward name="success" path="/success.jsp" />
+<forward name="register" path="/register.jsp" />
+<forward name="warning" path="/warning.jsp" />
+</action>
+</action-mappings>
+<message-resources parameter="ApplicationResources" />
+</struts-config>

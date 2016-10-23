@@ -1,0 +1,13 @@
+<web-app>
+<servlet>
+<servlet-name>frontcontroler</servlet-name>
+<servlet-class>com.pitambar.controller.FontController</servlet-class>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+ <servlet-name>frontcontroler</servlet-name>
+ <url-pattern>/interest</url-pattern>
+</servlet-mapping>
+</web-app>
+
